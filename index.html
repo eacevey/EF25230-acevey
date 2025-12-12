@@ -1,128 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Talento Tech</title>
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PE Talento Tech - Acevey, Eric</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
+    <div class="barra-superior">
+    ¡ENVIOS A TODO EL PAÍS!  &#8227;  3 CUOTAS SIN INTERÉS  &#8227; -10% TRANSFERENCIA
+    </div>
 
-   <header>
-      <div class="cabecera">
-         <img src="./assets/img/etiqueta.png" alt="Logo de mi tienda">
-         <h1>Mi tienda E-commerce</h1>
-      </div>
-   </header>
+    <header>
+        <img src="./assets/img/Calimera-logo.jpg" alt="Logo">
+        <h1>¡Bienvenidos a nuestra tienda!</h1>
+    </header>
 
-   <nav>
-      <ul>
-         <li>
-            <a href="#">Inicio</a>
-         </li>
-         <li>
-            <a href="#producto">Producto</a>
-         </li>
-         <li>
-            <a href="#contacto">Contactos</a>
-         </li>
-         <li>
-            <a href="./pages/carrito.html">Carrito</a>
-         </li>
-      </ul>
-   </nav>
+    <nav>
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="./pages/product.html">PRODUCTOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            
+            <li class="cart-icon-container">
+                <a onclick="handleCart()" href="./pages/carrito.html">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1M18 6H4.27l2.55 6H15c.33 0 .62-.16.8-.4l3-4c.13-.17.2-.38.2-.6a1 1 0 0 0-1-1m-3 7H6.87l-.77 1.56L6 15a1 1 0 0 0 1 1h11v1H7a2 2 0 0 1-2-2a2 2 0 0 1 .25-.97l.72-1.47L2.34 4H1V3h2l.85 2H18a2 2 0 0 1 2 2c0 .5-.17.92-.45 1.26l-2.91 3.89c-.36.51-.96.85-1.64.85" />
+                    </svg>
+                    <div class="count"></div>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-   <main>
-      <!-- <img src="./assets/img/ecommerce-internet-shopping.png" alt=""> -->
-      <h2>Bienvenido a mi tienda on-line</h2>
-   </main>
+    <main>
+        <h2>Obras destacadas</h2>
+    </main>
 
-   <section id="producto" class="container-product">
-      <h3>Productos</h3>
-      <div class="product">
-         <div class="card">
-            <a href="./pages/descripcion.html">
-               <h4>Nombre_Producto</h4>
-               <img src="https://picsum.photos/300/200?random=1" alt="Producto1">
-               <p>Descripción breve</p>
-               <p>Precio: <span>$XXX.XX</span></p>
-               <button>Comprar</button>
-            </a>
-         </div>
-         <div class="card">
-            <a href="./pages/descripcion.html">
-               <h4>Nombre_Producto</h4>
-               <img src="https://picsum.photos/300/200?random=2" alt="Producto1">
-               <p>Descripción breve</p>
-               <p>Precio: <span>$XXX.XX</span></p>
-               <button>Comprar</button>
-            </a>
-         </div>
-         <div class="card">
-            <a href="./pages/descripcion.html">
-               <h4>Nombre_Producto</h4>
-               <img src="https://picsum.photos/300/200?random=3" alt="Producto1">
-               <p>Descripción breve</p>
-               <p>Precio: <span>$XXX.XX</span></p>
-               <button>Comprar</button>
-            </a>
-         </div>
-         <div class="card">
-            <a href="./pages/descripcion.html">
-               <h4>Nombre_Producto</h4>
-               <img src="https://picsum.photos/300/200?random=4" alt="Producto1">
-               <p>Descripción breve</p>
-               <p>Precio: <span>$XXX.XX</span></p>
-               <button>Comprar</button>
-            </a>
-         </div>
-         <div class="card">
-            <a href="./pages/descripcion.html">
-               <h4>Nombre_Producto</h4>
-               <img src="https://picsum.photos/300/200?random=5" alt="Producto1">
-               <p>Descripción breve</p>
-               <p>Precio: <span>$XXX.XX</span></p>
-               <button>Comprar</button>
-            </a>
-         </div>
-         <div class="card">
-            <a href="./pages/descripcion.html">
-               <h4>Nombre_Producto</h4>
-               <img src="https://picsum.photos/300/200?random=6" alt="Producto1">
-               <p>Descripción breve</p>
-               <p>Precio: <span>$XXX.XX</span></p>
-               <button>Comprar</button>
-            </a>
-         </div>
-      </div>
-   </section>
+    <section id="Producto">
+        <div class="product">
+            <div class="card">
+                <a href="./pages/descripcion.html">
+                    <img src="./assets/img/Producto1.webp" alt="Producto 1">
+                    <h4>El sol y los planetas ¡Stock inmediato!</h4>
+                    <p class="detalle"><strong>Edad recomendada: a partir de 5 años</strong>
+                        <br>Un libro pop-up perfecto para quienes aman el espacio. A través de solapas y desplegables, los lectores exploran planetas, estrellas y cuerpos celestes, aprendiendo cómo funcionan y cómo afectan a nuestra vida en la Tierra. Contiene datos actuales y actividades experimentales que explican el sistema solar de forma clara y entretenida.</p>
+                </a>
+                <p class="precio">Precio: <span>$67.968,00</span></p>
+                <button>AGREGAR AL CARRITO</button>
+            </div>
+            
+            <div class="card">
+                <a href="./pages/descripcion.html">
+                    <img src="./assets/img/Producto2.webp" alt="Producto 2">
+                    <h4>Historias de ríos ¡Stock inmediato!</h4>
+                    <p class="detalle"><strong>Edad recomendada: a partir de 8 años</strong>
+                        <br>Navega por cinco ríos grandiosos y descubre relatos fascinantes sobre su historia, mitos y actualidad. El Nilo revela pirámides y templos; el Misisipi evoca dinosaurios y aventuras; el Rin habla de castillos y leyendas; el Yangtsé, de dragones y demonios; y el Amazonas, de ciudades perdidas. Un viaje visual e informativo con bellas ilustraciones desplegables.</p>
+                </a>
+                <p class="precio">Precio: <span>$52.121,00</span></p>
+                <button>AGREGAR AL CARRITO</button>
+            </div>
+            
+            <div class="card">
+                <a href="./pages/descripcion.html">
+                    <img src="./assets/img/Producto3.webp" alt="Producto 3">
+                    <h4>El Gran Baile de Walter Wilson Wuesos ¡Stock inmediato!</h4>
+                    <p class="detalle"><strong>Edad recomendada: a partir de 14 años</strong>
+                        <br>Cada página de este libro es una obra de arte en movimiento. Gracias a las filminas especiales, Walter Wilson Wuesos cobra vida y baila ante tus ojos. Al deslizar la filmina, las imágenes se animan, invitando al lector a moverse con él y sumergirse en una historia tan visual como divertida. Ideal para lectores curiosos y amantes de lo interactivo.</p>
+                </a>
+                <p class="precio">Precio: <span>$36.803,00</span></p>
+                <button>AGREGAR AL CARRITO</button>
+            </div>
 
-   <section id="resenia"></section>
+            <div class="card">
+                <a href="./pages/descripcion.html">
+                    <img src="./assets/img/Producto4.webp" alt="Producto 4">
+                    <h4>Pop-Up Volcanes ¡Stock inmediato!</h4>
+                    <p class="detalle"><strong>Edad recomendada: a partir de 4 años</strong>
+                        <br>¡Cuidado al abrir este libro! ¡Los volcanes rugen y están listos para explotar! Podrás asistir a espectaculares erupciones, retroceder en el tiempo para visitar Pompeya, conocer el oficio de vulcanólogo y descubrir las leyendas acerca de la cólera de la Tierra, desde Hawái hasta Japón.</p>
+                </a>
+                <p class="precio">Precio: <span>$63.250,00</span></p>
+                <button>AGREGAR AL CARRITO</button>
+            </div>
+            
+            <div class="card">
+                <a href="./pages/descripcion.html">
+                    <img src="./assets/img/Producto5.webp" alt="Producto 2">
+                    <h4>Curiosidades | Parte 2 | Benjamin Lacombe ¡Stock inmediato!</h4>
+                    <p class="detalle"><strong>Edad recomendada: a partir de 14 años</strong>
+                        <br>Este libro nos abre las puertas al estudio artístico y al universo creativo del internacionalmente reconocido autor e ilustrador francés Benjamin Lacombe. Su extensa obra ha sido publicada en numerosos idiomas y sus ilustraciones han protagonizado exposiciones en diferentes países.</p>
+                </a>
+                <p class="precio">Precio: <span>$67.125,00</span></p>
+                <button>AGREGAR AL CARRITO</button>
+            </div>
+            
+            <div class="card">
+                <a href="./pages/descripcion.html">
+                    
+                    <img src="./assets/img/Producto6.webp" alt="Producto 3">
+                    <h4>Dinosaurium - Visita nuestro museo ¡Stock inmediato!</h4>
+                    <p class="detalle"><strong>Edad recomendada: a partir de 6 años</strong>
+                        <br>Bienvenido a Dinosaurium Nuestro museo está abierto a todas horas. Sus salas albergan una extraordinaria colección de criaturas del Mesozoico, desde el pequeño troodón hasta el gigantesco braquiosaurio. Aprende cómo evolucionaron los dinosaurios y por qué unos tenían plumas y otros, escamas. Entra y explora el reino de los dinosaurios en todo su esplendor.</p>
+                </a>
+                <p class="precio">Precio: <span>$60.342,00</span></p>
+                <button>AGREGAR AL CARRITO</button>
+            </div>
+            
+        </div> 
+    </section>
 
-   <section id="contacto">
-      <form action="https://formbricks.com/" method="POST">
-         <label for="name">Nombre</label>
-         <input type="text" name="name" id="name" class="name-class" required placeholder="Ingrese su nombre">
-         <label for="msj">Descripción</label>
-         <textarea name="msj" id="msj" rows="5" cols="20"></textarea>
-         <button type="submit">Enviar</button>
-      </form>
-   </section>
+    <section id="resenias-seccion" class="resenias-seccion">
+        <div class="resenia-contenedor"> 
+            <div class="resenia-tarjeta">
+                <p class="resenia-texto">"¡Una joyita! Lo compré por recomendación y no me defraudó para nada. La trama te atrapa desde la primera página y los personajes son un flash. Ideal para el bondi o para quemar la noche. ¡Lo recomiendo a full!"</p>
+                <p class="resenia-autor">— Martín L., de Caballito, CABA</p>
+            </div>
 
-   <footer>
-      <div class="contact">
-         <a href="">
-            <!-- whatsapp -->
-         </a>
-      </div>
-      ©Todos los derechos reservados
-      <br>
-      Proyecto Pre-Entrega - Talento Tech
-   </footer>
+            <div class="resenia-tarjeta">
+                <p class="resenia-texto">"La calidad de este pop-up es impresionante, una obra de arte del papel. No es de esos libros que se rompen al toque; los mecanismos son robustos y el diseño de las solapas es de otro nivel. Si sos coleccionista o te gusta la ingeniería del papel, es un sí rotundo.""</p>
+                <p class="resenia-autor">— Camila G., lectora de Quilmes</p>
+            </div>
 
+            <div class="resenia-tarjeta">
+                <p class="resenia-texto">"¡Mi hijo está fascinado! Las ilustraciones son geniales y la historia es súper tierna y divertida. Llegó en perfecto estado, súper bien embalado. Ya estamos pensando en comprarle el que sigue. ¡Excelente para regalar!"</p>
+                <p class="resenia-autor">— Silvina P., de Córdoba</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="redes">
+    <div class="redes-footer">
+        <a class="redes-icon icon-40px icon-circle" href="https://instagram.com/" target="_blank" aria-label="instagram Calimera">
+        <svg class="icon-inline icon-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+    </a>
+        <a class="redes-icon icon-40px icon-circle" href="https://www.facebook.com/" target="_blank" aria-label="facebook Calimera">
+        <svg class="icon-inline icon-lg" viewBox="0 0 320 512"><path d="M279.1 288l14.3-92.7h-89v-60c0-25.4 12.5-50.2 52.3-50.2H297V6.4S260.4 0 225.4 0C152 0 104.3 44.4 104.3 124.7v70.6H22.9V288h81.4v224h100.2V288z"></path></svg> 
+        </a>
+        <a class="redes-icon icon-40px icon-circle" href="https://www.tiktok.com/" target="_blank" aria-label="tiktok Calimera">
+        <svg class="icon-inline icon-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path>
+        </svg>
+    </a>
+    </div>
+    </section>
+    
+    <section id="contacto">
+        <div class="grid-container">
+            <div class="contacto">
+                <form action="https://formspree.io/f/xgvnqdvl" method="POST">
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name" class="name-class" required placeholder="Ingrese su nombre">
+                    <label for="msj">Descripción: </label>
+                    <textarea name="msj" id="msj" rows="5" cols="20" placeholder="Escriba su mensaje aquí..."></textarea>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="redes">
+            <a href="" alt="whatsapp"></a>
+        </div>
+        <p class="legales">©Todos los derechos reservados. Sitio e-commerce. Proyecto pre-entrega, octubre 2025. Talento Tech.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
-
 </html>
