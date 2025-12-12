@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     actualizarContador();
     
-    // La lógica del carrito para la página carrito.html va en el archivo JS dedicado.
 });
 
 

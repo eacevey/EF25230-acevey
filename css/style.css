@@ -343,7 +343,6 @@ main h2 {
 }
 
 .contacto label {
-    /* Mantenido en px porque es un ajuste de pixel perfecto en formularios */
     margin-top: 15px; 
     margin-bottom: 5px; 
     font-weight: 400;
@@ -352,7 +351,6 @@ main h2 {
 
 .contacto input[type="text"],
 .contacto textarea {
-    /* Mantenido en px para bordes y padding de formularios */
     padding: 10px; 
     border: 1px solid var(--nav-desktop-lines);
     border-radius: 6px;
