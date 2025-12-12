@@ -139,6 +139,14 @@ main h2 {
     display: block;
 }
 
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    padding: 3rem 2rem;
+    justify-items: center;
+}
+
 .card img {
     width: 50%;
     height: auto;
